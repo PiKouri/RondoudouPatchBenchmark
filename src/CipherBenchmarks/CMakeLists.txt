@@ -6,6 +6,8 @@ cmake_minimum_required (VERSION 3.11)
 # Include Google Benchmark
 include(../cmake/GoogleBenchmark.cmake)
 
+set(CMAKE_CXX_FLAGS_RELEASE "-O0")
+
 # Add source to this project's executable.
 add_executable (CipherBenchmarks "rondoudou_patch2.cpp" "rondoudou_patch2.h")
 
